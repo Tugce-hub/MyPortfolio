@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<h1>Index</h1>
+
+<div class="container mt-4">
+    <h2>İletişim</h2>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <strong>Email:</strong> @ViewBag.Email
+        </li>
+        <li class="list-group-item">
+            <strong>Telefon:</strong> @ViewBag.Phone
+        </li>
+        <li class="list-group-item">
+            <strong>Instagram:</strong> <a href="@ViewBag.Instagram" target="_blank">@ViewBag.Instagram</a>
+        </li>
+        <li class="list-group-item">
+            <strong>GitHub:</strong> <a href="@ViewBag.GitHub" target="_blank">@ViewBag.GitHub</a>
+        </li>
+        <li class="list-group-item">
+            <strong>LinkedIn:</strong> <a href="@ViewBag.LinkedIn" target="_blank">@ViewBag.LinkedIn</a>
+        </li>
+    </ul>
+</div>
